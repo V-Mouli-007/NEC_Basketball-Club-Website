@@ -13,9 +13,6 @@
 
 **Python Project by V.Mouli**
 
-<img width="1886" height="1117" alt="image" src="https://github.com/user-attachments/assets/ffaacc84-a406-4cb1-af2c-ca0a3551bb99" />
-
-
 </div>
 
 ## 📖 About the Project
@@ -23,6 +20,9 @@
 **YourPortScanner** is a web-based port scanning tool that lets you scan any target host for open TCP ports in real time. It features an elegant cyberpunk-inspired UI with neon glows, scanline overlays, and live streaming results — making security reconnaissance both powerful and visually engaging.
 
 Results include not just open/closed status, but also the **service name**, **risk level**, and a **detailed risk description** for each scanned port — powered by a built-in port intelligence database.
+
+<img width="1886" height="1117" alt="image" src="https://github.com/user-attachments/assets/ffaacc84-a406-4cb1-af2c-ca0a3551bb99" />
+
 
 ---
 
