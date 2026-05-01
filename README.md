@@ -35,6 +35,8 @@ Results include not just open/closed status, but also the **service name**, **ri
 
 ---
 
+<div align="left">
+
 ## 🗂️ Project Structure
 
 ```
@@ -46,6 +48,8 @@ YourPortScanner/
 ```
 
 ---
+
+<div align="left">
 
 ## 🛠️ Tech Stack
 
@@ -120,6 +124,8 @@ http://127.0.0.1:5000
 
 ---
 
+<div align="left">
+
 ## 🎮 How to Use
 
 1. **Enter a Target** — Type an IP address (e.g., `192.168.1.1`) or a hostname (e.g., `example.com`)
@@ -131,6 +137,8 @@ http://127.0.0.1:5000
 
 ---
 
+<div align="left">
+
 ## 🛡️ Risk Level Reference
 
 | Risk Level | Color | Description |
@@ -141,6 +149,8 @@ http://127.0.0.1:5000
 | 🔴 **CRITICAL** | Red | Severe risk — should not be publicly exposed |
 
 ---
+
+<div align="left">
 
 ## 🔒 Port Intelligence Database
 
