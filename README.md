@@ -25,6 +25,8 @@ Results include not just open/closed status, but also the **service name**, **ri
 
 ## ✨ Features
 
+<div align="left">
+
 - 🌐 **Real-Time Scanning** — Results stream live to the browser using Server-Sent Events (SSE)
 - ⚡ **Multi-threaded Engine** — Scans up to 200 threads concurrently for blazing-fast results
 - 🎯 **Flexible Port Selection** — Scan specific ports or the full range (1–65535)
