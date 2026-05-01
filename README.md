@@ -1,27 +1,15 @@
 <div align="center">
-
-```
-██╗   ██╗ ██████╗ ██╗   ██╗██████╗     ██████╗  ██████╗ ██████╗ ████████╗
-╚██╗ ██╔╝██╔═══██╗██║   ██║██╔══██╗    ██╔══██╗██╔═══██╗██╔══██╗╚══██╔══╝
- ╚████╔╝ ██║   ██║██║   ██║██████╔╝    ██████╔╝██║   ██║██████╔╝   ██║   
-  ╚██╔╝  ██║   ██║██║   ██║██╔══██╗    ██╔═══╝ ██║   ██║██╔══██╗   ██║   
-   ██║   ╚██████╔╝╚██████╔╝██║  ██║    ██║     ╚██████╔╝██║  ██║   ██║   
-   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝  ╚═╝    ╚═╝      ╚═════╝ ╚═╝  ╚═╝   ╚═╝  
-                                                                            
-███████╗ ██████╗ █████╗ ███╗   ██╗███╗   ██╗███████╗██████╗               
-██╔════╝██╔════╝██╔══██╗████╗  ██║████╗  ██║██╔════╝██╔══██╗              
-███████╗██║     ███████║██╔██╗ ██║██╔██╗ ██║█████╗  ██████╔╝              
-╚════██║██║     ██╔══██║██║╚██╗██║██║╚██╗██║██╔══╝  ██╔══██╗              
-███████║╚██████╗██║  ██║██║ ╚████║██║ ╚████║███████╗██║  ██║              
-╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝              
-```
-
+ 
+# 🔍 YourPortScanner
+ 
 ### `[ REAL-TIME NETWORK PORT INTELLIGENCE TOOL ]`
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-3.1.3-black?style=for-the-badge&logo=flask&logoColor=white)
 ![Security](https://img.shields.io/badge/Security-Tool-red?style=for-the-badge&logo=hackthebox&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
+
+<div align="center">
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
