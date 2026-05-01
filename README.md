@@ -11,63 +11,56 @@
 
 <div align="center">
 
-```
-                 ┌─────────────────────────────────────────────────────────────┐
-                 │  TARGET ACQUIRED  >>>  SCANNING PORTS  >>>  RISK ANALYSIS   │
-                 └─────────────────────────────────────────────────────────────┘
-```
-
 **Python Project by V.Mouli**
 
 </div>
 
----
+## 📖 About the Project
 
-## `> ABOUT`
+**YourPortScanner** is a web-based port scanning tool that lets you scan any target host for open TCP ports in real time. It features an elegant cyberpunk-inspired UI with neon glows, scanline overlays, and live streaming results — making security reconnaissance both powerful and visually engaging.
 
-**YourPortScanner** is a web-based port scanning tool that streams results live to your browser using Server-Sent Events (SSE). It features a cyberpunk-inspired UI with real-time results, a built-in port intelligence database, and risk analysis for every discovered open port — from service identification to known CVE warnings.
-
----
-
-## `> FEATURES`
-
-```
-[+] Real-Time Scanning     — Results stream live via Server-Sent Events (SSE)
-[+] Multi-Threaded Engine  — Up to 200 concurrent threads for speed
-[+] Risk Intelligence      — Built-in DB with 50+ ports and risk metadata
-[+] Flexible Port Modes    — Scan specific ports or full range (1–65535)
-[+] Cyberpunk Web UI       — Neon-lit grid interface with scanline overlay
-[+] Hostname Resolution    — Accepts both IP addresses and domain names
-[+] Risk Classification    — LOW / MEDIUM / HIGH / CRITICAL risk levels
-```
+Results include not just open/closed status, but also the **service name**, **risk level**, and a **detailed risk description** for each scanned port — powered by a built-in port intelligence database.
 
 ---
 
-## `> PROJECT STRUCTURE`
+## ✨ Features
+
+- 🌐 **Real-Time Scanning** — Results stream live to the browser using Server-Sent Events (SSE)
+- ⚡ **Multi-threaded Engine** — Scans up to 200 threads concurrently for blazing-fast results
+- 🎯 **Flexible Port Selection** — Scan specific ports or the full range (1–65535)
+- 🛡️ **Risk Intelligence** — Every port result includes service name, risk level (`LOW` / `MEDIUM` / `HIGH` / `CRITICAL`), and a description of potential vulnerabilities
+- 🖥️ **Cyberpunk Web UI** — Neon-lit, grid-background interface with animated scanlines
+- 🔢 **Port Range Support** — Comma-separated custom ports or all-ports full scan mode
+- 🌍 **Hostname Resolution** — Accepts both IP addresses and domain names
+
+---
+
+## 🗂️ Project Structure
 
 ```
 YourPortScanner/
-├── app.py                  # Core Flask app & multi-threaded scanning engine
+├── app.py                  # 🐍 Main Flask application & scanning logic
 ├── templates/
-│   └── index.html          # Cyberpunk frontend (Tailwind CSS + SSE)
-└── venv/                   # Python virtual environment
+│   └── index.html          # 🎨 Cyberpunk-themed frontend UI
+└── venv/                   # 📦 Python virtual environment
 ```
 
 ---
 
-## `> TECH STACK`
+## 🛠️ Tech Stack
 
-| Layer | Technology | Version |
-|---|---|---|
-| Backend | Python + Flask | 3.1.3 |
-| Scanning | `socket` + `threading` | stdlib |
-| Streaming | Server-Sent Events (SSE) | — |
-| Frontend | Tailwind CSS | CDN |
-| Fonts | Exo 2, Share Tech Mono, Rajdhani | Google Fonts |
+| Technology | Purpose |
+|---|---|
+| 🐍 **Python 3** | Core language |
+| 🌶️ **Flask 3.1.3** | Web framework & SSE streaming |
+| 🔌 **socket** | TCP port connection testing |
+| 🧵 **threading** | Concurrent multi-threaded scanning |
+| 🎨 **Tailwind CSS** | Frontend utility styling |
+| 🔤 **Google Fonts** | Cyberpunk typography (Exo 2, Share Tech Mono, Rajdhani) |
 
 ---
 
-## `> DEPENDENCIES`
+## 📦 Dependencies
 
 ```
 Flask==3.1.3
@@ -82,19 +75,23 @@ MarkupSafe==3.0.3
 
 ---
 
-## `> INSTALLATION`
+## 🚀 Getting Started
 
-**Step 1 — Navigate to the project directory**
+### 1️⃣ Clone or Extract the Project
+
 ```bash
+# Extract the zip or clone your repo
 cd YourPortScanner
 ```
 
-**Step 2 — Create virtual environment**
+### 2️⃣ Create a Virtual Environment
+
 ```bash
 python -m venv venv
 ```
 
-**Step 3 — Activate virtual environment**
+### 3️⃣ Activate the Virtual Environment
+
 ```bash
 # Windows
 venv\Scripts\activate
@@ -103,96 +100,77 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-**Step 4 — Install Flask**
+### 4️⃣ Install Dependencies
+
 ```bash
 pip install flask
 ```
 
-**Step 5 — Launch the server**
+### 5️⃣ Run the Application
+
 ```bash
 python app.py
 ```
 
-**Step 6 — Open in browser**
+### 6️⃣ Open in Browser
+
 ```
 http://127.0.0.1:5000
 ```
 
 ---
 
-## `> HOW TO USE`
+## 🎮 How to Use
 
-```
-[1] Enter a target IP or hostname  →  e.g. 192.168.1.1  or  example.com
-[2] Choose scan mode               →  Specific Ports  or  All Ports (1-65535)
-[3] Enter port list (if specific)  →  e.g. 22,80,443,3306,3389
-[4] Hit SCAN                       →  Results stream live to the UI
-[5] Analyze results                →  Service name + risk level per open port
-```
-
----
-
-## `> RISK LEVEL MATRIX`
-
-```
-┌────────────┬──────────────────────────────────────────────────────────┐
-│  CRITICAL  │  Severe risk. Must not be publicly exposed.               │
-│            │  → SMB (445), RDP (3389), MySQL (3306), MongoDB (27017)  │
-├────────────┼──────────────────────────────────────────────────────────┤
-│    HIGH    │  Significant attack surface. Review immediately.          │
-│            │  → FTP (21), TFTP (69), NetBIOS (137), VNC (5900)        │
-├────────────┼──────────────────────────────────────────────────────────┤
-│   MEDIUM   │  Requires attention — potential misuse if misconfigured.  │
-│            │  → SSH (22), HTTP (80), SMTP (25), DNS (53)              │
-├────────────┼──────────────────────────────────────────────────────────┤
-│    LOW     │  Generally safe with proper TLS/auth configuration.       │
-│            │  → HTTPS (443), IMAPS (993), POP3S (995)                 │
-└────────────┴──────────────────────────────────────────────────────────┘
-```
+1. **Enter a Target** — Type an IP address (e.g., `192.168.1.1`) or a hostname (e.g., `example.com`)
+2. **Choose Scan Mode:**
+   - 🎯 **Specific Ports** — Enter comma-separated port numbers (e.g., `80,443,22,3389`)
+   - 🌍 **All Ports** — Scan all 65,535 TCP ports
+3. **Hit Scan** — Results stream in real time to the results panel
+4. **Interpret Results** — Each open port shows its service name and color-coded risk level
 
 ---
 
-## `> PORT INTELLIGENCE DATABASE`
+## 🛡️ Risk Level Reference
 
-The scanner includes metadata for **50+ well-known ports**, covering:
-
-```
-NETWORK      →  21 (FTP), 22 (SSH), 23 (Telnet), 25 (SMTP), 53 (DNS)
-WEB          →  80 (HTTP), 443 (HTTPS), 8080 (HTTP Alt), 8443 (HTTPS Alt)
-DATABASES    →  1433 (MSSQL), 3306 (MySQL), 5432 (PostgreSQL)
-             →  6379 (Redis), 9200 (Elasticsearch), 27017 (MongoDB)
-WINDOWS      →  135 (MS RPC), 139 (NetBIOS), 445 (SMB / EternalBlue)
-REMOTE ACC.  →  3389 (RDP / BlueKeep), 5900 (VNC), 4444 (Metasploit)
-CONTAINERS   →  2375 (Docker HTTP), 2376 (Docker TLS)
-```
-
-Unknown ports are auto-classified by range:
-```
-< 1024       →  Well-Known Port     (MEDIUM risk)
-1024–49151   →  Registered Port     (LOW risk)
-49152+       →  Dynamic/Private     (LOW risk)
-```
+| Risk Level | Color | Description |
+|---|---|---|
+| 🟢 **LOW** | Green | Generally safe with proper configuration |
+| 🟡 **MEDIUM** | Yellow | Requires attention — potential misuse possible |
+| 🟠 **HIGH** | Orange | Significant attack surface — review immediately |
+| 🔴 **CRITICAL** | Red | Severe risk — should not be publicly exposed |
 
 ---
 
-## `> DISCLAIMER`
+## 🔒 Port Intelligence Database
 
-```
-╔══════════════════════════════════════════════════════════════════════╗
-║  [!] FOR EDUCATIONAL & AUTHORIZED SECURITY TESTING PURPOSES ONLY    ║
-║                                                                      ║
-║  Always obtain explicit permission before scanning any network       ║
-║  or host. Unauthorized port scanning may be illegal in your          ║
-║  jurisdiction. The author assumes no liability for misuse.           ║
-╚══════════════════════════════════════════════════════════════════════╝
-```
+The scanner includes a built-in database of **50+ well-known ports** with risk metadata, including:
+
+- `21` FTP, `22` SSH, `23` Telnet, `25` SMTP
+- `80` HTTP, `443` HTTPS, `445` SMB (EternalBlue)
+- `3306` MySQL, `3389` RDP (BlueKeep), `6379` Redis
+- `27017` MongoDB, `9200` Elasticsearch, `4444` Metasploit
+- And many more...
+
+Unknown ports are categorized by range:
+- **< 1024** → Well-Known Port (MEDIUM)
+- **1024–49151** → Registered Port (LOW)
+- **49152+** → Dynamic/Private Port (LOW)
 
 ---
 
-<div align="center">
+## ⚠️ Disclaimer
 
-`[ SYSTEM READY ]` — `[ THREADS ARMED ]` — `[ AWAITING TARGET ]`
+> This tool is intended for **educational purposes** and **authorized security testing only**.
+> Always ensure you have explicit permission before scanning any network or host.
+> Unauthorized port scanning may be **illegal** in your jurisdiction.
 
-**Python Project by V.Mouli**
+---
 
-</div>
+## 📄 License
+
+This project is open for personal and educational use.
+
+---
+
+*🔐 Built with passion for network security and clean UI by **V.Mouli***
