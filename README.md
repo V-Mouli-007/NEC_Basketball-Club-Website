@@ -81,51 +81,6 @@ MarkupSafe==3.0.3
 
 ---
 
-## 🚀 Getting Started
-
-### 1️⃣ Clone or Extract the Project
-
-```bash
-# Extract the zip or clone your repo
-cd YourPortScanner
-```
-
-### 2️⃣ Create a Virtual Environment
-
-```bash
-python -m venv venv
-```
-
-### 3️⃣ Activate the Virtual Environment
-
-```bash
-# Windows
-venv\Scripts\activate
-
-# macOS / Linux
-source venv/bin/activate
-```
-
-### 4️⃣ Install Dependencies
-
-```bash
-pip install flask
-```
-
-### 5️⃣ Run the Application
-
-```bash
-python app.py
-```
-
-### 6️⃣ Open in Browser
-
-```
-http://127.0.0.1:5000
-```
-
----
-
 ## 🎮 How to Use
 
 <div align="left">
