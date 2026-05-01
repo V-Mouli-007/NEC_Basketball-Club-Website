@@ -37,9 +37,9 @@ Results include not just open/closed status, but also the **service name**, **ri
 
 ---
 
-<div align="left">
-
 ## 🗂️ Project Structure
+
+<div align="left">
 
 ```
 YourPortScanner/
@@ -51,9 +51,9 @@ YourPortScanner/
 
 ---
 
-<div align="left">
-
 ## 🛠️ Tech Stack
+
+<div align="left">
 
 | Technology | Purpose |
 |---|---|
@@ -126,9 +126,9 @@ http://127.0.0.1:5000
 
 ---
 
-<div align="left">
-
 ## 🎮 How to Use
+
+<div align="left">
 
 1. **Enter a Target** — Type an IP address (e.g., `192.168.1.1`) or a hostname (e.g., `example.com`)
 2. **Choose Scan Mode:**
@@ -139,9 +139,9 @@ http://127.0.0.1:5000
 
 ---
 
-<div align="left">
-
 ## 🛡️ Risk Level Reference
+
+<div align="left">
 
 | Risk Level | Color | Description |
 |---|---|---|
@@ -152,9 +152,9 @@ http://127.0.0.1:5000
 
 ---
 
-<div align="left">
-
 ## 🔒 Port Intelligence Database
+
+<div align="left">
 
 The scanner includes a built-in database of **50+ well-known ports** with risk metadata, including:
 
