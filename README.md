@@ -23,7 +23,7 @@ Results include not just open/closed status, but also the **service name**, **ri
 
 ---
 
-## ✨ Features
+## ✨ Features ✨
 
 <div align="left">
 
